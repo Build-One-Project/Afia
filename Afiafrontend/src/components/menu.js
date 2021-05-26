@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar,NavDropdown, Col, Container, Row } from 'react-bootstrap';
+import { Nav, Navbar,NavDropdown} from 'react-bootstrap';
 
 function Menu() {
   return (
