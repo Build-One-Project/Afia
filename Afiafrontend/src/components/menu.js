@@ -20,6 +20,8 @@ function Menu() {
           <NavDropdown.Item href="">Dairy Products & Beverages</NavDropdown.Item>
           <NavDropdown.Item href="">Food Flour & Pasta</NavDropdown.Item>
           <NavDropdown.Item href="">Cooking oil</NavDropdown.Item>
+          <NavDropdown.Item href="">Organic Fruits</NavDropdown.Item>
+          <NavDropdown.Item href="">Organic Vegetables</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="">Others...</NavDropdown.Item>
         </NavDropdown>
@@ -38,13 +40,7 @@ function Menu() {
           <NavDropdown.Item href="">Accessories</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="">Others...</NavDropdown.Item>
-        </NavDropdown>
-        <NavDropdown title="FRUITS & VEGETABLE" id="basic-nav-dropdown">
-          <NavDropdown.Item href="">Organic Fruits</NavDropdown.Item>
-          <NavDropdown.Item href="">Organic Vegetables</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="">Others...</NavDropdown.Item>
-        </NavDropdown>
+          </NavDropdown>
         <NavDropdown title="DRINKS" id="basic-nav-dropdown">
           <NavDropdown.Item href="">Juice & Milk</NavDropdown.Item>
           <NavDropdown.Item href="">Whiskey & Wine</NavDropdown.Item>
@@ -73,7 +69,28 @@ function Menu() {
           <NavDropdown.Item href="">Chicken & Beef</NavDropdown.Item>
           <NavDropdown.Item href="">Fish & Shrimp</NavDropdown.Item>
           <NavDropdown.Item href="">Vegetable &  chips</NavDropdown.Item>
-          <NavDropdown.Item href="">Baby Toys</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="">Others...</NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="KITCHEN & ELECTRONICS" id="basic-nav-dropdown">
+          <NavDropdown.Item href="">Glassware</NavDropdown.Item>
+          <NavDropdown.Item href="">Dinner Sets</NavDropdown.Item>
+          <NavDropdown.Item href="">Microwaves & Blenders</NavDropdown.Item>
+          <NavDropdown.Item href="">Coolers</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="">Others...</NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="FURNITURES" id="basic-nav-dropdown">
+          <NavDropdown.Item href="">Sofas &  Office Tables</NavDropdown.Item>
+          <NavDropdown.Item href="">Cabinets & Public address System</NavDropdown.Item>
+          <NavDropdown.Item href="">Dinning tables </NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="">Others...</NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="GYM ACC. & BAGS" id="basic-nav-dropdown">
+          <NavDropdown.Item href="">Travelling bags</NavDropdown.Item>
+          <NavDropdown.Item href="">Thread Mills</NavDropdown.Item>
+          <NavDropdown.Item href="">Dumbbells & Barbells </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="">Others...</NavDropdown.Item>
         </NavDropdown>
