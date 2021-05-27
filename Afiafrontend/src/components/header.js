@@ -6,7 +6,7 @@ import Menu from './menu';
 function Header() {
   return (
     <>
-    <Row className="App">
+    <Row>
         <Col xs={1}></Col>
         <Col xs={10} style={{padding:5}}>
         <img src="/images/afia.png" alt="logo" style={{width:'100px'}} />

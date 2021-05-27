@@ -7,7 +7,31 @@
 .Logo {
   width:70%;
 }
-
+.coreValues{
+  background-color: #fff;
+  padding: 4.8%;
+  text-align: center;
+  box-shadow: 0 2px 2px 2px rgb(168, 167, 167);
+  border-radius: 5px;
+  margin-bottom: 6%;
+  border-top: solid 8px tomato;
+}
+.coreValues p{
+  font-weight: bold;
+}
+.newArrivals{
+  background-color: #fff;
+  box-shadow: 0 2px 2px 2px rgb(168, 167, 167);
+  border-radius: 5px;
+  padding: 0;
+}
+.newArrivalsHead{
+  background-color: tomato;
+  margin: 0;
+  padding: 0.5% 1%;
+  color: #fff;
+  font-weight: bold;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
