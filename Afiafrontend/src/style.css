@@ -61,3 +61,22 @@
 .void{
   width: 15%;
 }
+
+/* category styling starts below*/
+
+.class1,.class2,.class3,.class4,.class5,.class6{
+  width: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.cardComponents{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+/* category styling stops here */
