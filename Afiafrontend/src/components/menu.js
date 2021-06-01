@@ -1,17 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar,NavDropdown} from 'react-bootstrap';
-import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
-import Categories from './category';
+import {NavLink} from 'react-router-dom';
+//import Categories from './category';
 
 function Menu() {
   return (
-    <Router>
     <Navbar bg="" expand="md" sticky="top" className="container-fluid">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <NavDropdown title="COSMETICS" id="basic-nav-dropdown">
-          <Link><NavDropdown.Item>Lotion & Shower Gel</NavDropdown.Item></Link>
+          <NavDropdown.Item href="/category/lotion.js">Lotion & Shower Gel</NavDropdown.Item>
           <NavDropdown.Item>Washing & cleaning liquids</NavDropdown.Item>
           <NavDropdown.Item>Hair conditioners</NavDropdown.Item>
           <NavDropdown.Divider />
@@ -96,16 +95,11 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <Link to="/category">CATEGORIES</Link>
+        <NavLink to="/our-category">CATEGORIES</NavLink>
       </Nav>
     </Navbar.Collapse>
     
-</Navbar>
-<Switch>
-  <Route path="/category" component={Categories} />
-</Switch>
-</Router>
-      
+</Navbar>      
   );
 }
 

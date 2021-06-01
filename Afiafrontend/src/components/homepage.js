@@ -1,14 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Col, Container, Row } from 'react-bootstrap';
+import {Col, Row } from 'react-bootstrap';
 import '../style.css';
 import HomeSlider from './carousel';
-import Header from './header';
-import Footer from './footer';
+//import Header from './header';
+//import Footer from './footer';
 import Categories from './category';
 function Homepage() {
   return (
-  <Container fluid>
-    <Header />
     <div className="mainContent">
     <Row>
         <Col md={1} xs={12} className="d-none d-sm-block"></Col>
@@ -56,8 +54,6 @@ function Homepage() {
         <Col md={1} xs={12} className="d-none d-sm-block"></Col>
     </Row>
     </div>
-    <Footer />
-    </Container>
   );
 }
 

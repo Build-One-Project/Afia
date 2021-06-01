@@ -1,11 +1,16 @@
 import Card from "react-bootstrap/Card";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
-import {Row, Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+import {Container, Row, Col} from 'react-bootstrap';
+//import Header from "./header";
 function Categories() {
    
   return (    
-    <Router>
+    <Container fluid>
+      <div className="mainContent">
+    <Row>
+        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+        <Col md={10} xs={12} style={{padding:5, width:'100%'}}>
     <Row className="categories">
       <Col md={3} xs={12}>
   <Card className="itemCard">
@@ -180,8 +185,12 @@ function Categories() {
   </Card>
   </Col>
   </Row>
-</Router>
-  );
+  </Col>
+        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+    </Row>
+    </div>
+  </Container>
+    );
 }
 
 export default Categories;

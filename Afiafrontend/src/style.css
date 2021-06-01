@@ -87,6 +87,10 @@
   padding:2% 0;
 }
 
+.footer a{
+  color:tomato
+}
+
 /* category styling starts below*/
 
 .itemCard{
