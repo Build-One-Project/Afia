@@ -11,7 +11,7 @@ function Categories() {
     <Row>
         <Col md={1} xs={12} className="d-none d-sm-block"></Col>
         <Col md={10} xs={12} style={{padding:5, width:'100%'}}>
-    <Row className="categories">
+    <Row>
       <Col md={3} xs={12}>
   <Card className="itemCard">
     <Card.Img variant="top" src="http://robanstores.com/wpimages/wpe15f0fe7_05_06.jpg" />
@@ -22,7 +22,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <Link to="" className="cardLink">View Category</Link>
+    <Link to="/cosmetics" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
 </Col>
@@ -36,7 +36,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/groceries" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
 </Col>
@@ -50,7 +50,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/bakery" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
 </Col>
@@ -64,12 +64,12 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/fashion" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
   </Row>
-  <Row className="categories">
+  <Row>
   <Col md={3} xs={12}>
   <Card className="itemCard">
     <Card.Img variant="top" src="http://robanstores.com/wpimages/wp769d621e_05_06.jpg" />
@@ -80,7 +80,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/fruits-and-vegetables" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -94,7 +94,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/drinks" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -108,7 +108,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/household" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -122,7 +122,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/baby-and-todler" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -138,7 +138,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/frozen" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -152,7 +152,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/furniture" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -166,7 +166,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/gym-and-accessories" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>
@@ -180,7 +180,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-       <Link to="" className="cardLink">View Category</Link>
+       <Link to="/kitchen-and-electronics" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
   </Col>

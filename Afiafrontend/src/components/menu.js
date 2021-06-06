@@ -4,15 +4,16 @@ import {NavLink} from 'react-router-dom';
 //import Categories from './category';
 
 function Menu() {
+
   return (
-    <Navbar bg="" expand="md" sticky="top" className="container-fluid">
+    <Navbar bg="" expand="md" >
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+      <Nav className="me-auto" sticky="top">
         <NavDropdown title="COSMETICS" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/category/lotion.js">Lotion & Shower Gel</NavDropdown.Item>
-          <NavDropdown.Item>Washing & cleaning liquids</NavDropdown.Item>
-          <NavDropdown.Item>Hair conditioners</NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/Lotion-Gel">Lotion & Shower Gel</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/Cleaning-Liquids">Washing & cleaning liquids</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/Hair-Conditionals">Hair conditioners</NavLink></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
@@ -74,10 +75,10 @@ function Menu() {
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
         <NavDropdown title="KITCHEN & ELECTRONICS" id="basic-nav-dropdown">
-          <NavDropdown.Item>Glassware</NavDropdown.Item>
-          <NavDropdown.Item>Dinner Sets</NavDropdown.Item>
-          <NavDropdown.Item>Microwaves & Blenders</NavDropdown.Item>
-          <NavDropdown.Item>Coolers</NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="Glassware">Glassware</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/Dinner-Sets">Dinner Sets</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/Microwave-and-Blenders">Microwaves & Blenders</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="Coolers">Coolers</NavLink></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
@@ -95,7 +96,6 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <NavLink to="/our-category">CATEGORIES</NavLink>
       </Nav>
     </Navbar.Collapse>
     

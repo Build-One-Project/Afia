@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './components/homepage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Categories from './components/category';
 import Header from './components/header';
 import Footer from './components/footer';
 import { Container } from 'react-bootstrap';
+import ProductCategory from './components/category/categoryproducts';
 function App() {
   return (
   <Router>
@@ -14,8 +14,8 @@ function App() {
   <Route exact path="/">
       <Homepage />
   </Route>
-    <Route path="/our-category">
-      <Categories />
+    <Route path="/:category">
+      <ProductCategory />
     </Route>
   </Switch>
   <Footer />

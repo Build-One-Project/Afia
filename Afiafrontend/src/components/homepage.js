@@ -9,10 +9,10 @@ function Homepage() {
   return (
     <div className="mainContent">
     <Row>
-        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+        <Col md={1} xs={12} className="d-none d-sm-none d-md-block d-lg-block"></Col>
         <Col md={10} xs={12} style={{padding:5, width:'100%'}}>
             <Row>
-            <Col md={2} className="d-none d-sm-block">
+            <Col md={2} className="d-none d-sm-none d-md-block d-lg-block">
                 <div className="coreValues">
                 <p>QUALITY</p>
                 Our strong culture and values are part of our core purpose and what makes us a successful company.
@@ -30,7 +30,7 @@ function Homepage() {
             <Col md={8} xs={12}>
                 <HomeSlider />
             </Col>
-            <Col md={2} className="d-none d-sm-block">
+            <Col md={2} className="d-none d-sm-none d-md-block d-lg-block">
                 <div style={{backgroundColor:'#fff', padding:'3%', borderTop:'solid 10px tomato', borderRadius:'5px', textAlign:'center', marginBottom:'4.3%'}}>
                 <b style={{fontSize:20, color:'tomato'}}>
                 Buy more for less with the new Afia Plus Card.
@@ -43,16 +43,17 @@ function Homepage() {
             </Col>
             </Row>
         </Col>
-        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+        <Col md={1} xs={12} className="d-none d-sm-none d-md-block d-lg-block"></Col>
     </Row>
     <Row>
-        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+        <Col md={1} xs={12} className="d-none d-sm-none d-md-block d-lg-block"></Col>
         <Col md={10} xs={12} className="newArrivals">
                 <div className="newArrivalsHead">FEATURED CATEGORIES</div>
                 <div className="newArrivalsBody"><Categories /></div>
         </Col>
-        <Col md={1} xs={12} className="d-none d-sm-block"></Col>
+        <Col md={1} xs={12} className="d-none d-sm-none d-md-block d-lg-block"></Col>
     </Row>
+   
     </div>
   );
 }
