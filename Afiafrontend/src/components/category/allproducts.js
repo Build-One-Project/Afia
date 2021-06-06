@@ -128,7 +128,7 @@ export const AllProducts =[
         category: "cosmetics"
     },
     {
-        id:9,
+        id:17,
         name: "Mr Muscle Advanced Power Tough Degreaser 750ml X2",
         photo: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/57/043846/1.jpg?7230",
         price: 7500,
@@ -136,7 +136,7 @@ export const AllProducts =[
         category: "cosmetics"
     },
     {
-        id:17,
+        id:18,
         name: "3 in 1 Dinner Plate",
         photo: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/74/616917/1.jpg?9108",
         price: 20000,
@@ -144,7 +144,7 @@ export const AllProducts =[
         category: "kitchen-and-electronics"
     },
     {
-        id:18,
+        id:19,
         name: "Microwave Oven With 20Liters + Blender-999 + Toaster",
         photo: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/56/864824/1.jpg?6508",
         price: 39400,
