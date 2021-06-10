@@ -13,17 +13,18 @@ function Homepage() {
         <Col md={10} xs={12} style={{padding:5, width:'100%'}}>
             <Row>
             <Col md={2} className="d-none d-sm-none d-md-block d-lg-block">
-                <div className="coreValues">
-                <p>QUALITY</p>
-                Our strong culture and values are part of our core purpose and what makes us a successful company.
-                </div>
-                <div className="coreValues">
-                <p>SERVICE</p>
-                We pride ourselves on delivering great products and services to our customers every day.
-                </div>
-                <div className="coreValues">
-                <p>VARIETY</p>
-                We are a one-stop retail shop that carries virtually everything you need in a home, also one of the leading retailers in Nigeria.
+                    
+                <div style={{backgroundColor:'#fff', padding:'3%', borderTop:'solid 10px tomato', borderRadius:'5px', textAlign:'center', marginBottom:'4.3%'}}>
+                <h4>OUR CORE VALUES</h4>
+                
+                <img src="/images/quality.png" alt="Card" style={{width:'50%'}} />
+                <p><b>QUALITY</b></p>
+                
+                <img src="/images/service.png" alt="Card" style={{width:'50%'}} />
+                <p><b>SERVICE</b></p>
+                
+                <img src="/images/variety.png" alt="Card" style={{width:'50%'}} />
+                <p><b>VARIETY</b></p>
                 </div>
                 
             </Col>
