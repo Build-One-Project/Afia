@@ -72,15 +72,12 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <NavDropdown title="KITCHEN & ELECTRONICS" id="basic-nav-dropdown">
+        <NavDropdown title="KITCHEN & OTHERS" id="basic-nav-dropdown">
           <NavDropdown.Item><NavLink to="Glassware">Glassware</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="/Dinner-Sets">Dinner Sets</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="/Microwave-and-Blenders">Microwaves & Blenders</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="Coolers">Coolers</NavLink></NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item>Others...</NavDropdown.Item>
-        </NavDropdown>
-        <NavDropdown title="GYM ACC. & BAGS" id="basic-nav-dropdown">
           <NavDropdown.Item>Travelling bags</NavDropdown.Item>
           <NavDropdown.Item>Thread Mills</NavDropdown.Item>
           <NavDropdown.Item>Dumbbells & Barbells </NavDropdown.Item>
