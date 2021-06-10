@@ -5,7 +5,6 @@ import {useParams} from 'react-router';
 import {Container, Row, Col, Alert} from 'react-bootstrap';
 import  AllProducts from './allproducts';
 import {useEffect} from 'react';
-import axios from 'axios'
 function ProductCategory() {
     let {category} = useParams();
     useEffect(
@@ -35,27 +34,7 @@ let productQueryResult;
         productQueryResult = <Alert variant="warning" style={{padding:'5%'}}><h3>No Products found in {category} Category!</h3></Alert>
 
     }
-    const allPT=()=>{
-    axios.get('https://fakestoreapi.com/products')
-        .then((res)=>{
-            const APIpr = res.data;
-       APIpr.map(resProduct=>(
-                <div>
-                    <p>ID: {resProduct.id}</p>
-                    <img src={resProduct.image} alt={resProduct.title} />
-                    <p>{resProduct.title}</p>
-                    <p>Price: {resProduct.price}</p>
-                    <p>{resProduct.description}</p>
-                </div>
     
-            ))
-
-        })
-        .catch(function (error) {
-            console.log(error);
-          });
-        }
-
   return (    
     <Container fluid>
       <div className="mainContent">
@@ -66,7 +45,6 @@ let productQueryResult;
      
           {productQueryResult}
         
-       <div> {allPT}</div>
   </Row>
   </Col>
         <Col md={1} xs={12} className="d-none d-sm-block"></Col>
