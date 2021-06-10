@@ -17,7 +17,7 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <NavDropdown title="GROCERIES" id="basic-nav-dropdown">
+        <NavDropdown title="GROCERIES & BAKERY" id="basic-nav-dropdown">
           <NavDropdown.Item>Cereal & Oat</NavDropdown.Item>
           <NavDropdown.Item>Dairy Products & Beverages</NavDropdown.Item>
           <NavDropdown.Item>Food Flour & Pasta</NavDropdown.Item>
@@ -25,9 +25,10 @@ function Menu() {
           <NavDropdown.Item>Organic Fruits</NavDropdown.Item>
           <NavDropdown.Item>Organic Vegetables</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item>Others...</NavDropdown.Item>
-        </NavDropdown>
-        <NavDropdown title="BAKERY" id="basic-nav-dropdown">
+          <NavDropdown.Item>Chicken & Beef</NavDropdown.Item>
+          <NavDropdown.Item>Fish & Shrimp</NavDropdown.Item>
+          <NavDropdown.Item>Vegetable &  chips</NavDropdown.Item>
+          <NavDropdown.Divider />
           <NavDropdown.Item>Fresh Bread</NavDropdown.Item>
           <NavDropdown.Item>Cookies & Pie</NavDropdown.Item>
           <NavDropdown.Item>Prepared Meals</NavDropdown.Item>
@@ -51,11 +52,15 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <NavDropdown title="HOUSEHOLD" id="basic-nav-dropdown">
+        <NavDropdown title="HOUSEHOLD & FURNITURES" id="basic-nav-dropdown">
           <NavDropdown.Item>Pillows and bedspread</NavDropdown.Item>
           <NavDropdown.Item>Flower Vases</NavDropdown.Item>
           <NavDropdown.Item>Wall clocks & hangers</NavDropdown.Item>
           <NavDropdown.Item>Interiors</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item>Sofas &  Office Tables</NavDropdown.Item>
+          <NavDropdown.Item>Cabinets & Public address System</NavDropdown.Item>
+          <NavDropdown.Item>Dinning tables </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
@@ -67,25 +72,11 @@ function Menu() {
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
-        <NavDropdown title="FROZEN" id="basic-nav-dropdown">
-          <NavDropdown.Item>Chicken & Beef</NavDropdown.Item>
-          <NavDropdown.Item>Fish & Shrimp</NavDropdown.Item>
-          <NavDropdown.Item>Vegetable &  chips</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item>Others...</NavDropdown.Item>
-        </NavDropdown>
         <NavDropdown title="KITCHEN & ELECTRONICS" id="basic-nav-dropdown">
           <NavDropdown.Item><NavLink to="Glassware">Glassware</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="/Dinner-Sets">Dinner Sets</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="/Microwave-and-Blenders">Microwaves & Blenders</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="Coolers">Coolers</NavLink></NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item>Others...</NavDropdown.Item>
-        </NavDropdown>
-        <NavDropdown title="FURNITURES" id="basic-nav-dropdown">
-          <NavDropdown.Item>Sofas &  Office Tables</NavDropdown.Item>
-          <NavDropdown.Item>Cabinets & Public address System</NavDropdown.Item>
-          <NavDropdown.Item>Dinning tables </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>

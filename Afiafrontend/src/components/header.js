@@ -16,12 +16,12 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
         <Col md={1}></Col>
         <Col md={10} xs={12} style={{padding:'5'}}>
           <Row>
-            <Col md={2} xs={3}>
+            <Col md={3} xs={3}>
               <Link to="/" style={{textDecoration:'none'}}><img src="/images/afia.png" alt="logo" style={{width:'70px', marginRight:'5%', marginTop:'3%',float:'left'}} />
               <font className="d-none d-sm-none d-md-none d-lg-block" style={{fontSize:25, marginTop:'1%', fontWeight:'bold', lineHeight:'3em', color:'#000'}}>Afia Stores</font>
               </Link>
             </Col>
-            <Col md={7} xs={9} style={{paddingLeft:'1%'}}>
+            <Col md={6} xs={9} style={{paddingLeft:'1%'}}>
               <Form style={{marginTop:'2.5%'}}>
                 <Row>
                   <Col md={10} xs={8}>
