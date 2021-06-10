@@ -15,7 +15,7 @@ function Homepage() {
             <Col md={2} className="d-none d-sm-none d-md-block d-lg-block">
                     
                 <div style={{backgroundColor:'#fff', padding:'3%', borderTop:'solid 10px tomato', borderRadius:'5px', textAlign:'center', marginBottom:'4.3%'}}>
-                <b style={{fontSize:20, color:'tomato'}}>OUR CORE VALUES</b>
+                <b style={{fontSize:18, color:'tomato'}}>OUR CORE VALUES</b><br />
                 
                 <img src="/images/quality.png" alt="Card" style={{width:'50%'}} />
                 <p><b>QUALITY</b></p>
