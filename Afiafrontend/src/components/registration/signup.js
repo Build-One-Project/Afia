@@ -9,13 +9,13 @@ const register = ()=> {
              <h3>Register</h3>
 
              <div className="form-group">
-                <label>First name</label>
+                <label>Name</label>
                 <input type="text" aria-required className="form-control" placeholder="First name..."></input>
              </div>
 
              <div className="form-group">
-                <label>Last name</label>
-                <input type="text" className="form-control" placeholder="Last name..."></input>
+                <label>Username</label>
+                <input type="text" className="form-control" placeholder="Choose a username.."></input>
              </div>
 
              <div className="form-group">
@@ -30,7 +30,7 @@ const register = ()=> {
 
              <div className="form-group">
                 <label>Password</label>
-                <input type="password" className="form-control" placeholder="First name..."></input>
+                <input type="password" className="form-control" placeholder="Input password..."></input>
              </div>
 
              <button type="submit" className="btn btn-yellow btn-lg btn-block">Register</button>
