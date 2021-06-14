@@ -1,5 +1,5 @@
-# Afia
-E-commerce platform like Roban Store
+# Afia Store: E-commerce platform like Roban Store
+
 This project is aimed at developing an ecommerce store for roban store. We called it Afia Store. Afia is the Igbo name for market.
 Features of the project include:
 1. Product Display
