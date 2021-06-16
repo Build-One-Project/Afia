@@ -53,9 +53,9 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
                   <center><Button className="searchButton" variant="primary" type="submit" style={{width:'60%', backgroundColor:'tomato', borderColor:'tomato', marginBottom:'10px'}}>
                   LOGIN
                   </Button> </center>
-                  <p style={{lineHeight:2, textAlign:'center'}}>Forgot Password?</p>
+                  <p style={{lineHeight:2, textAlign:'center'}}><Link to="/forgotpassword">Forgot Password?</Link></p>
                   <NavDropdown.Divider />
-                  <p style={{textAlign:'center'}}>CREATE AN ACCOUNT</p>
+                  <p style={{textAlign:'center', textDecorationStyle:'none'}}><Link to="/register">CREATE AN ACCOUNT</Link></p>
 
                 </Form>
               </NavDropdown>
