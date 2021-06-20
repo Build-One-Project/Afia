@@ -2,8 +2,8 @@ import {Container, Row, Col, Button} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 function Login  (){
    document.title = 'Login - Afia Stores';
-   const password = document.getElementById('password');
-   const email = document.getElementById('email');
+   //const password = document.getElementById('password');
+   //const email = document.getElementById('email');
 
 
    
