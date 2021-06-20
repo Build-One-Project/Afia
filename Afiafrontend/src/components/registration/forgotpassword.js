@@ -1,5 +1,6 @@
 import {Container, Row, Col, Button} from 'react-bootstrap';
 function ForgotPassword  (){
+    document.title = 'Forgot Password - Afia Stores'
     return (
       <Container fluid>
       <div className="mainContent">
@@ -13,12 +14,16 @@ function ForgotPassword  (){
             <h3 style={{color:'tomato', textAlign:'center'}}>FORGOT PASSWORD</h3>
 
             <div className="form-group">
-               <label>Enter your email below:</label>
+               <label>Enter Email:</label>
                <input type="email" aria-required className="form-control" placeholder="example@email.com"></input>
             </div>
+            <div className="form-group">
+               <label>Phone Number:</label>
+               <input type="number" aria-required className="form-control" placeholder="08101236309"></input>
+            </div>
 
-            <center><Button type="submit" variant="primary" className="searchButton" style={{width:'20%', backgroundColor:'tomato', borderColor:'tomato', marginBottom:'10px'}}>
-               SEND
+            <center><Button type="submit" variant="primary" className="searchButton" style={{width:'30%', backgroundColor:'tomato', borderColor:'tomato', marginBottom:'10px'}}>
+               GET PASSWORD
             </Button>
             </center>
             </form>

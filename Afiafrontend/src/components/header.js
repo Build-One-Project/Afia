@@ -40,27 +40,20 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
             <Col md={3} xs={12} style={{marginTop:'1.5%'}} className="d-none d-md-block d-sm-none d-lg-block">
               <div style={{float:'left', width:'60%'}}>
                 <NavDropdown title={[loginIcon,loginLabel]} id="basic-nav-dropdown" style={{zIndex:'9999'}}>
-                <Form style={{padding:'5%', align:'center'}}>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                  </Form.Group>
-
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                  </Form.Group>
-                  <center><Button className="searchButton" variant="primary" type="submit" style={{width:'60%', backgroundColor:'tomato', borderColor:'tomato', marginBottom:'10px'}}>
-                  LOGIN
-                  </Button> </center>
-                  <p style={{lineHeight:2, textAlign:'center'}}><Link to="/forgotpassword">Forgot Password?</Link></p>
-                  <NavDropdown.Divider />
-                  <p style={{textAlign:'center', textDecorationStyle:'none'}}><Link to="/register">CREATE AN ACCOUNT</Link></p>
-
-                </Form>
+                  <p style={{padding:'3%'}}>
+                    <Link to="/login" className="btn  btn-primary searchButton" style={{width:'100%', backgroundColor:'tomato', borderColor:'tomato'}}>
+                      LOGIN
+                    </Link>
+                  </p>
+                  <hr />
+                  <p style={{textAlign:'center', textDecorationStyle:'none'}}>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to="/register">
+                      CREATE AN ACCOUNT
+                    </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
               </NavDropdown>
             </div>
-            <div style={{float:'left', marginTop:'2%'}}>
+            <div style={{float:'left', marginTop:'2%', width:'40%'}}>
               <Link to="/cart" style={{textDecoration:'none', color:'#000', fontWeight:'bold'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000" style={{width:24}}>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />

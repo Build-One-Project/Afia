@@ -7,6 +7,8 @@ import { Container } from 'react-bootstrap';
 import ProductCategory from './components/category/categoryproducts';
 import Register from './components/registration/signup';
 import ForgotPassword from './components/registration/forgotpassword';
+import RegSuccess from './components/registration/regsuccess';
+import Login from './components/registration/login';
 function App() {
   return (
   <Router>
@@ -16,8 +18,14 @@ function App() {
   <Route exact path="/">
       <Homepage />
   </Route>
+  <Route path="/login">
+      <Login />
+    </Route>
   <Route path="/register">
       <Register />
+    </Route>
+    <Route path="/successpage">
+      <RegSuccess />
     </Route>
     <Route path="/forgotpassword">
       <ForgotPassword />
