@@ -10,7 +10,6 @@ import ForgotPassword from './components/registration/forgotpassword';
 import RegSuccess from './components/registration/regsuccess';
 import Login from './components/registration/login';
 import ErrorPage from './components/errorpage';
-import Search from './components/category/search';
 function App() {
   return (
   <Router>
@@ -36,9 +35,6 @@ function App() {
     </Route>
     <Route>
       <ProductCategory />
-    </Route>
-    <Route>
-      <Search />
     </Route>
   </Switch>
   <Footer />
