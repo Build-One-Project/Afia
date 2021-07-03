@@ -1,7 +1,10 @@
 import {Container, Row, Col, Alert} from 'react-bootstrap';
+import Header from '../header';
 function RegSuccess  (){
    document.title = 'Success - Afia Stores'
        return (
+           <>
+           <Header />
       <Container fluid>
       <div className="mainContent">
     <Row>
@@ -27,6 +30,7 @@ function RegSuccess  (){
     </Row>
     </div>
   </Container>
+  </>
             
     )
 }

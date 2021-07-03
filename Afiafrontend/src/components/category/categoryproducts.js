@@ -1,19 +1,22 @@
 import Card from "react-bootstrap/Card";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-router-dom';
-import {useParams} from 'react-router';
+import {Link, useHistory, useLocation} from 'react-router-dom';
 import {Container, Row, Col, Alert} from 'react-bootstrap';
 import  AllProducts from './allproducts';
-import {useEffect} from 'react';
+import Header from '../header'
 function ProductCategory() {
-    let {category} = useParams();
-    useEffect(
-        ()=>{
-            document.title=category.replace('-',' ') + " - Afia Stores"
-        }
-    )
-let productQuery = AllProducts.filter(product=>product.category===category|| product.subcategory===category);
-let productQueryResult;
+    const location = useLocation();
+    const history = useHistory();
+    let category = new URLSearchParams(location.search).get("category");
+    let productQueryResult;
+    //document.getElementById('searchTerm').value = '';
+    //document.getElementById('searchTerm').style.display = 'none';
+
+    if(category){
+
+     document.title=category.replace('-',' ') + " - Afia Stores";
+
+let productQuery = AllProducts.filter(product=>product.category===category|| product.subcategory===category || product.id===category);
     if (productQuery.length >=1){
         productQueryResult = productQuery.map(product=>(
             <Col md={3} xs={12} key={product.id}>
@@ -30,12 +33,21 @@ let productQueryResult;
      </Col>
      ))
   }
-    else{
-        productQueryResult = <Alert variant="warning" style={{padding:'5%'}}><h3>No Products found in {category} Category!</h3></Alert>
+   else{
+        productQueryResult =  
+        <Alert className="text-center" variant="warning" style={{padding:'5%', width:'100%'}}>
+            <h3>No products found in the <font style={{backgroundColor:'tomato', color:'#fff', padding:'0.5%'}}>{category}</font> Category!</h3>
+        </Alert>
 
     }
+}
+else {
+    history.push("/errorpage", {from:"ProductCategory"})
+}
     
-  return (    
+  return (
+      <>
+    <Header />
     <Container fluid>
       <div className="mainContent">
     <Row>
@@ -51,6 +63,7 @@ let productQueryResult;
     </Row>
     </div>
   </Container>
+  </>
     );
 }
 

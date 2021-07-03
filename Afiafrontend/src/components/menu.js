@@ -11,9 +11,9 @@ function Menu() {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto" sticky="top">
         <NavDropdown title="COSMETICS" id="basic-nav-dropdown">
-          <NavDropdown.Item><NavLink to="/Lotion-Gel">Lotion & Shower Gel</NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink to="/Cleaning-Liquids">Washing & cleaning liquids</NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink to="/Hair-Conditionals">Hair conditioners</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Lotion-Gel">Lotion & Shower Gel</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Cleaning-Liquids">Washing & cleaning liquids</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Hair-Conditionals">Hair conditioners</NavLink></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
@@ -73,10 +73,10 @@ function Menu() {
           <NavDropdown.Item>Others...</NavDropdown.Item>
         </NavDropdown>
         <NavDropdown title="KITCHEN & OTHERS" id="basic-nav-dropdown">
-          <NavDropdown.Item><NavLink to="Glassware">Glassware</NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink to="/Dinner-Sets">Dinner Sets</NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink to="/Microwave-and-Blenders">Microwaves & Blenders</NavLink></NavDropdown.Item>
-          <NavDropdown.Item><NavLink to="Coolers">Coolers</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Glassware">Glassware</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Dinner-Sets">Dinner Sets</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Microwave-and-Blenders">Microwaves & Blenders</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to="/products?category=Coolers">Coolers</NavLink></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Travelling bags</NavDropdown.Item>
           <NavDropdown.Item>Thread Mills</NavDropdown.Item>

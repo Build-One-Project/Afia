@@ -3,9 +3,30 @@ import {Form, Button, Col, Row, NavDropdown} from 'react-bootstrap';
 import '../style.css';
 import Menu from './menu';
 import {Link} from 'react-router-dom';
+import {useState} from 'react';
+import AllProducts from './category/allproducts';
 
 function Header() {
-  
+  const [Input, setInput] = useState('');
+  const [search, setSearch] = useState([]);
+  let searchResult;
+  let myDisplay;
+
+  const handleChange = (e)=>{
+    const inputValue = e.target.value.toLocaleLowerCase();
+    const queryResult = inputValue !=='' && inputValue.length>=2 ? AllProducts.filter(product=>product.name.toLocaleLowerCase().includes(inputValue)) : ''
+    setInput(inputValue);
+    setSearch(queryResult);
+  };
+  if(search.length>=1)
+  {
+    myDisplay='block'
+    searchResult = search.map(searchP => (
+    <Link to={"/products?category="+searchP.id}><p key={searchP.id}>{searchP.name}</p></Link>
+  ));
+    }
+    
+
   const loginIcon = (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000" style={{width:24}}>
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>)
@@ -25,8 +46,13 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
               <Form style={{marginTop:'2.5%'}}>
                 <Row>
                   <Col md={10} xs={8}>
-                <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Search products, brands and categories" style={{borderColor:'rgb(0 0 0 / 12%)'}}/>
+                <Form.Group autocomplete="off" className="mb-3">
+                  <Form.Control type="text" placeholder="Search products, brands and categories" 
+                  style={{borderColor:'rgb(0 0 0 / 12%)'}}
+                  onChange ={handleChange}     value={Input} id="searchTerm" />
+                  <div className="liveSearch" style={{display:myDisplay !== '' ? myDisplay : 'none'}} id="liveSearch">
+                   {searchResult}
+                  </div>
                 </Form.Group>
                 </Col>
                 <Col md={2} xs={4}>
@@ -70,25 +96,18 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
         <Col md={10} xs={12} style={{padding:5}}>
             <div className="d-block d-md-none d-sm-block d-lg-none" style={{float:'left', width:'70%'}}>
               <div style={{float:'left', width:'75%'}}>
-                <NavDropdown title={[loginIcon,loginLabel]} id="basic-nav-dropdown" style={{zIndex:'9999'}}>
-                <Form style={{padding:'5%', align:'center'}}>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                  </Form.Group>
-
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                  </Form.Group>
-                  <center><Button className="searchButton" variant="primary" type="submit" style={{width:'60%', backgroundColor:'tomato', borderColor:'tomato', marginBottom:'10px'}}>
-                  LOGIN
-                  </Button> </center>
-                  <p style={{lineHeight:2, textAlign:'center'}}>Forgot Password?</p>
-                  <NavDropdown.Divider />
-                  <p style={{textAlign:'center'}}>CREATE AN ACCOUNT</p>
-
-                </Form>
+              <NavDropdown title={[loginIcon,loginLabel]} id="basic-nav-dropdown" style={{zIndex:'9999'}}>
+                  <p style={{padding:'3%'}}>
+                    <Link to="/login" className="btn  btn-primary searchButton" style={{width:'100%', backgroundColor:'tomato', borderColor:'tomato'}}>
+                      LOGIN
+                    </Link>
+                  </p>
+                  <hr />
+                  <p style={{textAlign:'center', textDecorationStyle:'none'}}>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Link to="/register">
+                      CREATE AN ACCOUNT
+                    </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
               </NavDropdown>
             </div>
             <div style={{marginTop:'2.5%', fontWeight:'bold'}}>

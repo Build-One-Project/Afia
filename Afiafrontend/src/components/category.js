@@ -22,7 +22,7 @@ function Categories() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <Link to="/cosmetics" className="cardLink">View Category</Link>
+    <Link to="/products/category=?" className="cardLink">View Category</Link>
     </Card.Footer>
   </Card>
 </Col>

@@ -1,7 +1,10 @@
 import {Container, Row, Col, Button} from 'react-bootstrap';
+import Header from '../header';
 function ForgotPassword  (){
     document.title = 'Forgot Password - Afia Stores'
     return (
+      <>
+      <Header />
       <Container fluid>
       <div className="mainContent">
     <Row>
@@ -35,6 +38,7 @@ function ForgotPassword  (){
     </Row>
     </div>
   </Container>
+  </>
             
     )
 }
