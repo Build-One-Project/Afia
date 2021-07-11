@@ -1,6 +1,6 @@
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import Header from '../header';
+//import Header from '../header';
 function Login  (){
    document.title = 'Login - Afia Stores';
    //const password = document.getElementById('password');
@@ -14,7 +14,6 @@ function Login  (){
    }
     return (
        <>
-       <Header />
       <Container fluid>
       <div className="mainContent">
     <Row>

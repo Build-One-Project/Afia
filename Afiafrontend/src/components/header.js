@@ -1,16 +1,29 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Form, Button, Col, Row, NavDropdown} from 'react-bootstrap';
+import {Form, Button, Col, Row, NavDropdown, Badge} from 'react-bootstrap';
 import '../style.css';
 import Menu from './menu';
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
-import AllProducts from './category/allproducts';
+import AllProducts from './products/allproducts';
 
-function Header() {
+function Header({item}) {
   const [Input, setInput] = useState('');
   const [search, setSearch] = useState([]);
   let searchResult;
   let myDisplay;
+  let mySearchTerm = document.getElementById('searchTerm');
+
+  function handleSubmitForm(event){
+    event.preventDefault(); 
+  }
+
+  const handleClick = ()=>{
+    if(mySearchTerm.value.length >0) {
+      setInput('');
+      setSearch([]);
+      return true;
+    }
+  }
 
   const handleChange = (e)=>{
     const inputValue = e.target.value.toLocaleLowerCase();
@@ -22,7 +35,7 @@ function Header() {
   {
     myDisplay='block'
     searchResult = search.map(searchP => (
-    <Link to={"/products?category="+searchP.id}><p key={searchP.id}>{searchP.name}</p></Link>
+    <Link to={"/products?category="+searchP.id} onClick={handleClick} key={searchP.id}><p>{searchP.name}</p></Link>
   ));
     }
     
@@ -31,6 +44,8 @@ function Header() {
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>)
 const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontWeight:'bold'}}> Login</font>);
+
+
   return (
     <>
     <Row>
@@ -43,10 +58,10 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
               </Link>
             </Col>
             <Col md={6} xs={9} style={{paddingLeft:'1%'}}>
-              <Form style={{marginTop:'2.5%'}}>
+              <Form style={{marginTop:'2.5%'}} onSubmit={handleSubmitForm}>
                 <Row>
                   <Col md={10} xs={8}>
-                <Form.Group autocomplete="off" className="mb-3">
+                <Form.Group autocomplete="off" className="mb-3" >
                   <Form.Control type="text" placeholder="Search products, brands and categories" 
                   style={{borderColor:'rgb(0 0 0 / 12%)'}}
                   onChange ={handleChange}     value={Input} id="searchTerm" />
@@ -80,11 +95,11 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
               </NavDropdown>
             </div>
             <div style={{float:'left', marginTop:'2%', width:'40%'}}>
-              <Link to="/cart" style={{textDecoration:'none', color:'#000', fontWeight:'bold'}}>
+              <Link to="/shopping-cart" style={{textDecoration:'none', color:'#000', fontWeight:'bold'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#000" style={{width:24}}>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg> Cart
-              </Link>
+                </svg>Cart <Badge pill style={{backgroundColor:'tomato', color:'#fff'}}><b>{item.length}</b></Badge>            
+                </Link>
           </div>
           </Col>
           </Row>
@@ -111,10 +126,10 @@ const loginLabel =(<font style={{textDecorationStyle:'none', color:'#000', fontW
               </NavDropdown>
             </div>
             <div style={{marginTop:'2.5%', fontWeight:'bold'}}>
-              <Link to="/cart" style={{textDecoration:'none', color:'tomato'}}>
+              <Link to="/shopping-cart" style={{textDecoration:'none', color:'tomato'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="tomato" style={{width:24}}>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg> Cart
+                </svg> Cart({item.length})
               </Link>
           </div>
             </div>

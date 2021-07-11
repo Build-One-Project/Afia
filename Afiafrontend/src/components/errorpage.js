@@ -1,11 +1,10 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
-import Header from './header';
+//import Header from './header';
 function ErrorPage  (){
    document.title = 'Not Found - Afia Stores'
        return (
          <>
-         <Header />
       <Container fluid>
       <div className="mainContent">
     <Row>

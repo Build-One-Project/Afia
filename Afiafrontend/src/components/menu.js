@@ -6,10 +6,10 @@ import {NavLink} from 'react-router-dom';
 function Menu() {
 
   return (
-    <Navbar bg="" expand="md" >
+    <Navbar bg="" expand="md" className="sticky-top">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto" sticky="top">
+      <Nav className="me-auto">
         <NavDropdown title="COSMETICS" id="basic-nav-dropdown">
           <NavDropdown.Item><NavLink to="/products?category=Lotion-Gel">Lotion & Shower Gel</NavLink></NavDropdown.Item>
           <NavDropdown.Item><NavLink to="/products?category=Cleaning-Liquids">Washing & cleaning liquids</NavLink></NavDropdown.Item>

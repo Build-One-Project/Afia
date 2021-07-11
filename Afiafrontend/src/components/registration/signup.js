@@ -1,7 +1,7 @@
 import {Container, Row, Col, Button, Alert, Modal} from 'react-bootstrap';
 import {useState} from 'react'
 import { useHistory, Link } from "react-router-dom";
-import Header from '../header';
+//import Header from '../header';
 function Register  (){
    document.title = 'Register - Afia Stores';
    const history = useHistory();
@@ -56,7 +56,6 @@ function Register  (){
    }
     return (
        <>
-       <Header />
       <Container fluid>
       <div className="mainContent">
     <Row>

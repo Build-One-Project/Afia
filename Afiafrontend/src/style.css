@@ -1,12 +1,20 @@
 .Menu {
   text-align: none;
   background-color: #fff;
-  box-shadow: 0 4px 4px -4px rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 2px 2px lightgray;
   padding: 0%;
 }
 
 .searchButton{
   box-shadow: 0 4px 8px -4px gray;
+}
+.addRemoveButton{
+  box-shadow: 0 4px 8px -4px gray;
+  color:#fff;
+  background-color: tomato;
+  text-align: center;
+  border-color: tomato;
+  border-radius: 3px;
 }
 
 .Logo {
